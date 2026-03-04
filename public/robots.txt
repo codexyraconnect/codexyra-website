@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codexyra.vercel.app/sitemap.xml
