@@ -95,6 +95,34 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
+
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Codexyra",
+      url: "https://codexyra.vercel.app",
+      logo: "https://codexyra.vercel.app/favicon.png",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+91-6239520582",
+        contactType: "customer service",
+        areaServed: "IN",
+        availableLanguage: "English",
+      },
+      sameAs: [
+        "https://instagram.com/codexyra.connect"
+      ],
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Punjab",
+        addressCountry: "India"
+      }
+    }),
+  }}
+/>
         <Analytics />
       </body>
     </html>
