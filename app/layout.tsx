@@ -43,6 +43,8 @@ export const metadata: Metadata = {
 
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 
   openGraph: {
@@ -53,6 +55,14 @@ export const metadata: Metadata = {
     siteName: "Codexyra",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Codexyra Web Development Agency",
+      },
+    ],
   },
 
   twitter: {
@@ -60,6 +70,7 @@ export const metadata: Metadata = {
     title: "Codexyra | Modern Websites for Growing Businesses",
     description:
       "Web development agency building modern websites, e-commerce stores, and web applications.",
+    images: ["/og-image.png"],
   },
 
   robots: {
